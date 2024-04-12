@@ -96,6 +96,7 @@ type Probe struct {
 	checkPin           bool
 	funcName           string //目标hook对象的函数名；uprobe中，若为空，则使用offset。
 	AttachPID          int    // pid to attach, only for uprobe .
+	Cookie             uint64 // cookie to attach
 	attachRetryAttempt uint
 
 	// TCFilterHandle - (TC classifier) defines the handle to use when loading the classifier. Leave unset to let the kernel decide which handle to use.
@@ -692,6 +693,7 @@ func (p *Probe) attachUprobe() error {
 		Offset:  p.UprobeOffset,
 		Address: p.UAddress,
 		PID:     p.AttachPID,
+		Cookie:  p.Cookie,
 	}
 
 	var kp link.Link
