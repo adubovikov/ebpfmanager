@@ -3,11 +3,12 @@ package main
 import (
 	"bufio"
 	"errors"
-	"github.com/gojue/ebpfmanager"
-	"github.com/sirupsen/logrus"
 	"os"
 	"strings"
 	"time"
+
+	manager "github.com/adubovikov/ebpfmanager"
+	"github.com/sirupsen/logrus"
 )
 
 var m = &manager.Manager{

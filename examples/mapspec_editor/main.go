@@ -1,11 +1,12 @@
 package main
 
 import (
+	"math"
+
+	manager "github.com/adubovikov/ebpfmanager"
 	"github.com/cilium/ebpf"
-	"github.com/gojue/ebpfmanager"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
-	"math"
 )
 
 var m = &manager.Manager{}

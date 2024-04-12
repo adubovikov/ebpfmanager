@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/sirupsen/logrus"
 
+	manager "github.com/adubovikov/ebpfmanager"
 	"github.com/cilium/ebpf"
-	"github.com/gojue/ebpfmanager"
 )
 
 func demoMapEditor() error {

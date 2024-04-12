@@ -3,13 +3,14 @@ package main
 import (
 	_ "embed"
 	"fmt"
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/asm"
-	"github.com/sirupsen/logrus"
 	"log"
 	"time"
 
-	manager "github.com/gojue/ebpfmanager"
+	"github.com/cilium/ebpf"
+	"github.com/cilium/ebpf/asm"
+	"github.com/sirupsen/logrus"
+
+	manager "github.com/adubovikov/ebpfmanager"
 )
 
 var Probe []byte

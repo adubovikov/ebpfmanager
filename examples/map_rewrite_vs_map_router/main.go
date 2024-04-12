@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gojue/ebpfmanager"
+	manager "github.com/adubovikov/ebpfmanager"
 	"github.com/sirupsen/logrus"
 )
 

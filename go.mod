@@ -1,4 +1,4 @@
-module github.com/gojue/ebpfmanager
+module github.com/adubovikov/ebpfmanager
 
 go 1.21
 

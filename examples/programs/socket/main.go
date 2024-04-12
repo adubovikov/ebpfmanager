@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/sirupsen/logrus"
 
-	"github.com/gojue/ebpfmanager"
+	manager "github.com/adubovikov/ebpfmanager"
 )
 
 var m = &manager.Manager{

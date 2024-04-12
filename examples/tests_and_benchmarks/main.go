@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/cilium/ebpf"
 	"github.com/sirupsen/logrus"
 
-	"github.com/gojue/ebpfmanager"
+	manager "github.com/adubovikov/ebpfmanager"
 )
 
 type TestData struct {

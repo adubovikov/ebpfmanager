@@ -3,8 +3,9 @@ package manager
 import (
 	"errors"
 	"fmt"
+
+	"github.com/adubovikov/ebpfmanager/kernel"
 	"github.com/cilium/ebpf/ringbuf"
-	"github.com/gojue/ebpfmanager/kernel"
 )
 
 // RingbufMapOptions - Perf map specific options

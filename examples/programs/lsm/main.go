@@ -2,15 +2,16 @@ package main
 
 import (
 	"fmt"
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/features"
-	"github.com/gojue/ebpfmanager/kernel"
 	"os"
 	"os/signal"
 	"runtime"
 	"time"
 
-	manager "github.com/gojue/ebpfmanager"
+	"github.com/adubovikov/ebpfmanager/kernel"
+	"github.com/cilium/ebpf"
+	"github.com/cilium/ebpf/features"
+
+	manager "github.com/adubovikov/ebpfmanager"
 	"github.com/sirupsen/logrus"
 )
 

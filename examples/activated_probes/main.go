@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/gojue/ebpfmanager"
 	"os"
 	"os/signal"
 	"time"
+
+	manager "github.com/adubovikov/ebpfmanager"
 
 	"github.com/sirupsen/logrus"
 )
